@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Gospel Glow — a colorful school project about Jesus Christ, faith, love, and hope.">
+<title>Gospel Glow ✝</title>
+<style>
+:root{--blue:#2f6fed;--red:#d94b4b;--yellow:#e9c84a;--green:#3d9b68;--black:#171717;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--black);background:#fff}
+/* BIG, BRIGHT COLOR STRIPE */
+.color-bar{height:8px;background:linear-gradient(90deg,var(--blue) 0 20%,var(--red) 20% 40%,var(--yellow) 40% 60%,var(--green) 60% 80%,var(--black) 80% 100%)}
+nav{position:sticky;top:0;z-index:20;background:#111;padding:14px;text-align:center;border-bottom:6px solid var(--yellow);box-shadow:0 5px 18px #0004}
+nav a{display:inline-block;color:#fff;text-decoration:none;font-weight:900;padding:9px 15px;margin:3px;border-radius:999px}nav a:nth-child(1):hover{background:var(--blue)}nav a:nth-child(2):hover{background:var(--red)}nav a:nth-child(3):hover{background:var(--green)}
+ .hero{min-height:68vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px;position:relative;overflow:hidden;color:var(--black);background:#f7f9fc;}
+.hero:before{content:"";position:absolute;width:320px;height:320px;background:var(--yellow);border-radius:50%;right:-150px;top:-150px;opacity:.28}.hero:after{content:"";position:absolute;width:260px;height:260px;background:var(--blue);border-radius:50%;left:-130px;bottom:-130px;opacity:.16}
+.hero-inner{position:relative;z-index:2;max-width:820px;background:#fff;padding:42px 30px;border:3px solid var(--blue);border-radius:28px;box-shadow:0 14px 35px #00000012}
+.cross{font-size:58px;color:var(--blue)}
+.hero h1{font-size:clamp(48px,10vw,86px);margin:5px 0 10px;line-height:1;color:var(--black)}
+.hero p{font-size:clamp(18px,3vw,25px);font-weight:700;max-width:700px;margin:0 auto;color:#333}.btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 27px;border-radius:999px;text-decoration:none;font-weight:900;margin-top:25px;border:3px solid var(--black);box-shadow:4px 4px 0 var(--black)}.btn:hover{background:var(--green)}
+main{max-width:1100px;margin:auto;padding:60px 20px}section{margin-bottom:70px}
+h2{font-size:40px;text-align:center;margin:0 0 28px;font-weight:900;letter-spacing:.5px}#about h2{color:var(--blue)}#videos h2{color:var(--red)}#upload h2{color:var(--green)}
+.card{border:2px solid #ddd;border-radius:22px;padding:30px;box-shadow:6px 6px 0 #e8eef8;background:#fff}.intro{font-size:19px;line-height:1.8;border-color:#cbd9f5}
+.quote{font-size:25px;text-align:center;font-weight:900;line-height:1.5;background:#fff9df;border-color:#eadb92;box-shadow:6px 6px 0 #f2eeee}
+small{font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}.video-card{background:#fff;border:2px solid #ddd;border-radius:18px;overflow:hidden;box-shadow:5px 5px 0 #e8eef8}.video-card:nth-child(2n){box-shadow:5px 5px 0 #f1e4e4}.video-card:nth-child(3n){box-shadow:5px 5px 0 #e5f0e9}.video-card:nth-child(4n){box-shadow:5px 5px 0 #e4e4e4}.video-card video{display:block;width:100%;aspect-ratio:16/9;background:#111}.video-info{padding:18px;border-top:5px solid var(--blue)}.video-card:nth-child(2n) .video-info{border-top-color:var(--red)}.video-card:nth-child(3n) .video-info{border-top-color:var(--yellow)}.video-card:nth-child(4n) .video-info{border-top-color:var(--green)}.video-info h3{margin:0 0 7px;font-size:20px}.video-info p{margin:0}
+.upload{background:#f8fbff;border-color:#bcd4c6;text-align:center}.upload input{display:block;margin:20px auto;padding:12px;border:4px solid var(--blue);border-radius:12px;background:#fff;max-width:100%}button{border:5px solid #111;box-shadow:6px 6px 0 var(--red);border-radius:999px;background:var(--blue);color:#fff;padding:14px 28px;font-size:17px;font-weight:900;cursor:pointer}button:hover{background:var(--green);box-shadow:6px 6px 0 var(--black)}
+.empty{padding:30px;text-align:center;border:5px dashed var(--red);border-radius:20px;background:#fff0ef;font-weight:800}.note{margin-top:20px}
+footer{margin-top:30px;color:#fff;text-align:center;padding:34px 20px;background:var(--black);border-top:5px solid var(--blue)}footer .box{background:#111d;display:inline-block;padding:18px 25px;border-radius:18px;font-weight:800}
+@media(max-width:600px){nav a{padding:7px 9px;font-size:14px}.hero-inner{padding:30px 18px}.hero h1{font-size:58px}main{padding-top:45px}h2{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="color-bar"></div>
+<header class="hero"><div class="hero-inner"><div class="cross">✝</div><h1>Gospel Glow</h1><p>Discover the story, teachings, love, and hope found in Jesus Christ.</p><a class="btn" href="#videos">Watch Videos ↓</a></div></header>
+<nav aria-label="Main navigation"><a href="#about">💙 About</a><a href="#videos">❤️ Videos</a><a href="#upload">💚 Add a Video</a></nav>
+<main>
+<section id="about"><h2>Who Is Jesus?</h2><div class="card intro"><p>Jesus is the central figure of Christianity. Christians believe that Jesus taught people to love God and love one another, and that His life, death, and resurrection are at the heart of the Christian faith.</p><p><strong>Gospel Glow</strong> is a school project created to share videos and information about Jesus in a welcoming and easy-to-understand way.</p><div style="margin-top:28px;padding:24px;border:2px solid var(--blue);border-radius:20px;background:#f7faff;box-shadow:6px 6px 0 #e8eef8;text-align:center"><div style="font-size:30px;margin-bottom:8px">📖 ✝</div><p style="font-size:24px;font-weight:900;line-height:1.5;margin:0">“In the beginning was the Word, and the Word was with God, and the Word was God.”</p><p style="font-size:18px;font-weight:800;margin:12px 0 0;color:var(--blue)">— John 1:1</p><p style="font-size:22px;font-weight:900;line-height:1.5;margin:18px 0 0">“The Word became flesh and made his dwelling among us.”</p><p style="font-size:18px;font-weight:800;margin:12px 0 0;color:var(--blue)">— John 1:14</p></div></div></section>
+<section><div class="card quote">“For God so loved the world that he gave his one and only Son...”<br><small>— John 3:16</small></div></section>
+<section id="videos"><h2>Videos About Jesus</h2><div id="videoGrid" class="grid"><article class="video-card"><video controls preload="metadata" playsinline><source src="gospel_glow_video.mp4" type="video/mp4">Your browser does not support video playback.</video><div class="video-info"><h3>Gospel Glow Video</h3><p>A Gospel Glow video about Jesus.</p></div></article></div></section>
+<section id="upload"><h2>Add Your Video</h2><div class="card upload"><p><strong>🎥 Share a video about Jesus</strong></p><p>Select a video from your computer, then click <strong>Add Video</strong>.</p><label for="videoInput"><strong>Choose a video:</strong></label><input id="videoInput" type="file" accept="video/*"><button id="addButton" type="button">➕ Add Video</button><p class="note"><small>This preview works in your browser. To make videos permanently available to everyone on a public website, you would need to upload them to a server or video platform.</small></p></div></section>
+</main>
+<footer><div class="box">✝ <strong>Gospel Glow</strong><br>Sharing the message of Jesus with love and hope. 🌟</div></footer>
+<script>
+const input=document.getElementById('videoInput'),grid=document.getElementById('videoGrid'),empty=document.getElementById('emptyState'),button=document.getElementById('addButton');
+button.addEventListener('click',()=>{if(!input.files.length){alert('Please choose a video first.');return;}const file=input.files[0],url=URL.createObjectURL(file);if(empty)empty.remove();const card=document.createElement('article');card.className='video-card';const video=document.createElement('video');video.controls=true;video.preload='metadata';video.src=url;video.setAttribute('aria-label',file.name);const info=document.createElement('div');info.className='video-info';const title=document.createElement('h3');title.textContent=file.name;const desc=document.createElement('p');desc.textContent='A Gospel Glow video about Jesus.';info.append(title,desc);card.append(video,info);grid.append(card);input.value='';card.scrollIntoView({behavior:'smooth',block:'center'});});
+</script>
+</body></html>
